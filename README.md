@@ -26,16 +26,20 @@ Fitness: Self-reported fitness level (1-5)
 Income: Annual income in USD
 Miles: Miles run per week on the treadmill
 Analysis and Modeling
+
 1. Data Preprocessing
 Categorical Encoding: Gender, MaritalStatus, and Product columns were encoded for analysis.
 Binning: Continuous variables like Age, Income, and Miles were binned for better interpretability.
 Outlier Detection: Outliers in Age, Income, and Miles were identified, but instead of removing them, they were clipped due to the small dataset size.
+
 2. Correlation Analysis
 The product choice highly correlates with factors such as Education, Income, Usage, Fitness, and Miles run.
 Usage and Miles are strongly correlated with higher-end products (KP781), while lower-end products (KP281) are preferred by those with lower Income and Fitness.
+
 3. Visualization
 Scatterplots and factorplots were used to identify patterns in customer preferences based on Income, Age, Usage, and Miles run.
 Correlation heatmaps were created to visualize relationships between variables.
+
 4. Conditional and Marginal Probabilities
 The likelihood of a customer buying a particular treadmill model was calculated using conditional and marginal probabilities based on factors like Income, Fitness, and Usage.
 Key Insights
@@ -49,22 +53,7 @@ Favored by middle-aged customers with moderate income ($50,000 - $70,000) and fi
 Men with incomes between 60k-70k who run 100-150 miles are likely to buy KP481.
 KP781:
 
-Only purchased by customers with high income (above $70,000) who exercise more frequently and run more than 150 miles a week.
-Customers with high fitness levels (4-5) are more likely to purchase KP781.
-Customer Profiling and Recommendations
-KP281:
-Target Audience:
-Women with incomes below 70k and age > 40.
-Customers with Income 45k-50k and usage days = 2 or 4.
-Customers with Fitness = 4, Age closer to 40, and Income 50k-60k.
-KP481:
-Target Audience:
-Men with Income 60k-70k, Fitness = 4, and running 100-150 miles per week.
-Customers with Age < 25, Income 50k-60k, and Miles run = 100-150.
-KP781:
-Target Audience:
-Customers with Income > 70k, Usage > 5 days a week, and running > 150 miles per week.
-Customers with Education Level >= 18, Fitness = 5, and high weekly treadmill usage.
+
 
 Usage
 Load the dataset and preprocess it by encoding categorical variables and binning continuous variables.
