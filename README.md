@@ -9,7 +9,9 @@ Problem Statement
 Aerofit collects customer data on variables such as gender, age, income, weekly usage, fitness, marital status, and miles run on the treadmill. The goal is to identify patterns that drive the purchase of one of three treadmill models:
 
 KP281: Entry-level treadmill.
+
 KP481: Mid-tier treadmill.
+
 KP781: High-end treadmill.
 The objective is to recommend the most suitable treadmill to future customers based on their profiles.
 
@@ -51,11 +53,11 @@ KP481:
 
 Favored by middle-aged customers with moderate income ($50,000 - $70,000) and fitness levels.
 Men with incomes between 60k-70k who run 100-150 miles are likely to buy KP481.
-KP781:
 
 
 
 Usage
+
 Load the dataset and preprocess it by encoding categorical variables and binning continuous variables.
 Perform correlation analysis and visualizations using seaborn and matplotlib.
 Apply conditional and marginal probability analysis to identify customer preferences.
